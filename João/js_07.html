@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(14, 14, 75);
+    }
+</style>
+<body>
+   <h1>Login</h1>
+    <input type="text" id="usuario" placeholder="Digite seu usúario">
+    <input type="password" id="senha" placeholder="Digite sua senha">
+    <button onclick="login()"> Enviar</button>
+
+    <script>
+        function login() {
+            const usuario = document.getElementById("usuario").value;
+            const senha = document.getElementById("senha").value;
+
+            if (usuario === "Thainapink" && senha === "0321") {
+                alert ("Acesso permitido.")
+            } else {
+                alert("Usúario ou senha incorreto. Acesso negado.")
+            }
+        }
+    </script>
+    
+</body>
+</html>

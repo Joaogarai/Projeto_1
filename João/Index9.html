@@ -1,0 +1,76 @@
+<DOCTYPE html1>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário de Feedback -Progamação Web</title>
+<style>
+    body{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYN-Db8yqGHRA9IPPncNMQ9ZDEaLS49JasJQ&s);
+
+        background-repeat: no-repeat;
+
+        background-size: 100%;
+    }
+</style>
+   
+ </head>
+    <body>
+        <h2>Formulário de Feedback - Curso de Programação Web</h2>
+        <p>Preencha o formulário abaixo para avaliarmos sua experiência no curso.</p>
+
+        <form action="#" method="POST"><!--FORM: Define um formulário em uma página web-->
+            
+            <label for="nome">Nome Completo:</label> <!--LABEL:Fornece uma descrição para u campo de entrada, melhorando a acessibilidade. FOR: Conecta o rótulo ao campo correspondente pelo id-->
+
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+            <small>Campo obrigatório: Este campo usa o atributo <code>required</code> pra garantir que seja preenchido.</small>
+            <br><br>
+
+
+            <Label for="email">E-mail:</Label>
+            <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+            <small> Campo obrigatório: o navegador verifica se o formato digitado é um e-mail válido.</small>
+            <br><br>
+            <!--Campo de Avaliação (Número com limite mínimo e máximo)-->
+
+            <label for="avaliacao">Avaliação do curso (1 a 10):</label>
+            <input type="number" id="avaliacao" name="avaliacao" min="1" max="10" required>
+            <small>O atributo <code>min</code> Define o valor minimo e <code>max</code> o valor máximo permitido.</small>
+            <br><br>
+            
+            <!-- Campo de Data (Selecionada uma data especifica)-->
+            <label for="data">Data de conclusão do curso:</label>
+            <input type="date" id="data" name="data" required>
+            <small>O tipo <code>date</code> exibe</small>
+            <br><br>
+
+            <!--Campo de seleção (Dropdown)-->
+            <label for="satisfacao">Nivel de satisfação</label>
+            <select id="satisfacao" name="satisfacao" required>
+                <option value="">Selecione</option>
+                <option value="exelente"> Excelente</option>
+                <option value="bom">Bom</option>
+                <option value="regular">Regular</option>
+                <option value="ruim">Ruim</option>
+                </select>
+                <small>Usamos a teg <code>&lt;select&gt;</code> para criar um menu suspenso com opções pré-definidas.</small>
+                <br><br>
+
+                <!-- Campo de Comentários (Área de texto)-->
+
+                <label for="comentarios">Cometários sobre o curso:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Deixe seu feedback aqui..."></textarea>
+                <small>A teg <code>&lt;textarea&gt;</code>Permite escrever textos mais longos</small>
+                <br><br>
+                
+                <!--Checkbox (Aceitar os termos)-->
+                <input type="checkbox" id="termos" name="termos" required>
+                <label for="termos">Aceito termo de privacidade</label>
+                <small> O botão <code>&lt;button type="submit"&gt;</code> garante que o usuário só possa enviar se marcar essa opção.</small>
+                <br><br>
+                <!--Botão de Envio-->
+                <button type="submit">Enviar Feedback</button>
+                <small> O botão<code>&lt;button type="submit"&gt;</code>envie os dados do formuário.</small>
+        </form>
+    </body>
+</html>
